@@ -4,6 +4,6 @@ resource "helm_release" "envoy_gateway" {
   repository    = "oci://docker.io/envoyproxy"
   chart         = "gateway-helm"
   namespace     = "envoy-gateway-system"
-  version       = "v1.6.1"
+  version       = "latest"
   recreate_pods = true
 }
