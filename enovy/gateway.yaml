@@ -55,8 +55,6 @@ spec:
   - name: nginx-gateway
     sectionName: http
     kind: Gateway
-  hostnames:
-  - demo.apigateway.com
   rules:
   - backendRefs:
     - name: simple-router-svc
